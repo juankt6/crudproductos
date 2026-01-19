@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\crudproductos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\crudproductos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|c:\\users\\compu\\onedrive\\escritorio\\uniandes\\aplicaciones web\\sem 2\\crudproductos\\crudproductos\\migrations\\20260119045115_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0F94EEF-05F0-44FA-8D97-AB60D60AF457}|CrudProductos\\CrudProductos.csproj|solutionrelative:crudproductos\\migrations\\20260119045115_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cde3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CrudProductos\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CrudProductos\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T04:43:44.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "CrudProductos\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Models\\Producto.cs",
+              "RelativeToolTip": "CrudProductos\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T04:41:58.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "CrudProductos\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "CrudProductos\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowDwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T04:47:34.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Views\\Productos\\Index.cshtml",
+              "RelativeDocumentMoniker": "CrudProductos\\Views\\Productos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Views\\Productos\\Index.cshtml",
+              "RelativeToolTip": "CrudProductos\\Views\\Productos\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvy8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T05:12:17.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Program.cs",
+              "RelativeDocumentMoniker": "CrudProductos\\Program.cs",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Program.cs",
+              "RelativeToolTip": "CrudProductos\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T04:45:01.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Views\\Productos\\Create.cshtml",
+              "RelativeDocumentMoniker": "CrudProductos\\Views\\Productos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Views\\Productos\\Create.cshtml",
+              "RelativeToolTip": "CrudProductos\\Views\\Productos\\Create.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvysAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T05:01:10.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Views\\Productos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CrudProductos\\Views\\Productos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Views\\Productos\\Edit.cshtml",
+              "RelativeToolTip": "CrudProductos\\Views\\Productos\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-19T05:01:30.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260119045115_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Migrations\\20260119045115_InitialCreate.cs",
+              "RelativeDocumentMoniker": "CrudProductos\\Migrations\\20260119045115_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\Migrations\\20260119045115_InitialCreate.cs",
+              "RelativeToolTip": "CrudProductos\\Migrations\\20260119045115_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T04:51:15.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\appsettings.json",
+              "RelativeDocumentMoniker": "CrudProductos\\appsettings.json",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\appsettings.json",
+              "RelativeToolTip": "CrudProductos\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-19T04:44:17.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CrudProductos.csproj",
+              "DocumentMoniker": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\CrudProductos.csproj",
+              "RelativeDocumentMoniker": "CrudProductos\\CrudProductos.csproj",
+              "ToolTip": "C:\\Users\\compu\\OneDrive\\Escritorio\\Uniandes\\aplicaciones web\\SEM 2\\CrudProductos\\CrudProductos\\CrudProductos.csproj",
+              "RelativeToolTip": "CrudProductos\\CrudProductos.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-19T04:42:42.616Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
