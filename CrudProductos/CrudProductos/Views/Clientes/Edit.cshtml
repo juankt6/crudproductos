@@ -1,0 +1,92 @@
+﻿@model CrudProductos.Models.Cliente
+
+@{
+    ViewData["Title"] = "Editar Cliente";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0 fw-bold"><i class="bi bi-person-gear"></i> Editar Cliente</h4>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="All" class="alert alert-danger"></div>
+
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="UsuarioId" />
+
+                        <div class="form-group mb-3">
+                            <label class="form-label fw-bold text-muted small text-uppercase">Atendido Por:</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="bi bi-person-badge-fill"></i></span>
+                                <input type="text" class="form-control bg-light" readonly
+                                       value="@(Model.Usuario != null ? Model.Usuario.Nombres + " " + Model.Usuario.Apellidos : "Vendedor no registrado")" />
+                            </div>
+                            <small class="text-muted">Este campo no se puede editar.</small>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                ...
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Nombres" class="form-label fw-bold"></label>
+                                <input asp-for="Nombres" class="form-control" />
+                                <span asp-validation-for="Nombres" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Apellidos" class="form-label fw-bold"></label>
+                                <input asp-for="Apellidos" class="form-control" />
+                                <span asp-validation-for="Apellidos" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Email" class="form-label fw-bold"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input asp-for="Email" class="form-control" />
+                                </div>
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="ProductoId" class="form-label fw-bold">Producto de Interés</label>
+                                <select asp-for="ProductoId" class="form-select" asp-items="ViewBag.ProductoId"></select>
+                                <span asp-validation-for="ProductoId" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Direccion" class="form-label fw-bold"></label>
+                            <textarea asp-for="Direccion" class="form-control" rows="2"></textarea>
+                            <span asp-validation-for="Direccion" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center border-top pt-3">
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left"></i> Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-success btn-lg shadow-sm fw-bold">
+                                <i class="bi bi-check-lg"></i> Guardar Cambios
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

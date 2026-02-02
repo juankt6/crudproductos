@@ -1,0 +1,77 @@
+﻿@model CrudProductos.Models.Cliente
+
+@{
+    ViewData["Title"] = "Ficha del Cliente";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0 fw-bold"><i class="bi bi-person-vcard-fill"></i> Ficha del Cliente</h4>
+                </div>
+                <div class="card-body p-4">
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="text-muted small text-uppercase">Datos Personales</h5>
+                            <hr class="mt-0">
+                            <dl class="row">
+                                <dt class="col-sm-4 text-secondary">Nombres:</dt>
+                                <dd class="col-sm-8 fw-bold">@Html.DisplayFor(model => model.Nombres)</dd>
+
+                                <dt class="col-sm-4 text-secondary">Apellidos:</dt>
+                                <dd class="col-sm-8 fw-bold">@Html.DisplayFor(model => model.Apellidos)</dd>
+
+                                <dt class="col-sm-4 text-secondary">Email:</dt>
+                                <dd class="col-sm-8">@Html.DisplayFor(model => model.Email)</dd>
+
+                                <dt class="col-sm-4 text-secondary">Dirección:</dt>
+                                <dd class="col-sm-8">@Html.DisplayFor(model => model.Direccion)</dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted small text-uppercase">Información Comercial</h5>
+                            <hr class="mt-0">
+                            <dl class="row">
+                                <dt class="col-sm-4 text-secondary">Interés:</dt>
+                                <dd class="col-sm-8">
+                                    <span class="badge bg-primary">@Html.DisplayFor(model => model.Producto.Nombre)</span>
+                                </dd>
+
+                                <dt class="col-sm-4 text-secondary">Atendido por:</dt>
+                                <dd class="col-sm-8">
+                                    @if (Model.Usuario != null)
+                                    {
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person-circle text-muted me-2"></i>
+                                            <div>
+                                                <strong>@Model.Usuario.Nombres @Model.Usuario.Apellidos</strong>
+                                                <br />
+                                                <small class="text-muted">@Model.Usuario.CodigoVendedor</small>
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">Sin asignar</span>
+                                    }
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4 border-top pt-3">
+                        <a asp-action="Index" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Volver a la lista
+                        </a>
+                        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-success fw-bold shadow-sm">
+                            <i class="bi bi-pencil"></i> Editar Cliente
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

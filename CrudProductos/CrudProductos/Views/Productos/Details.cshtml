@@ -1,42 +1,59 @@
 ﻿@model CrudProductos.Models.Producto
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles del Producto";
 }
 
-<h1>Details</h1>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow border-0 rounded-3">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0 fw-bold"><i class="bi bi-info-circle-fill"></i> Detalles del Producto</h4>
+                </div>
+                <div class="card-body p-4">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="text-muted small text-uppercase">Información Básica</h5>
+                            <hr class="mt-0">
+                            <dl class="row">
+                                <dt class="col-sm-4 text-secondary">Nombre:</dt>
+                                <dd class="col-sm-8 fw-bold fs-5">@Html.DisplayFor(model => model.Nombre)</dd>
 
-<div>
-    <h4>Producto</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nombre)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Precio)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Precio)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Categoria)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Categoria)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaCreacion)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaCreacion)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+                                <dt class="col-sm-4 text-secondary">Categoría:</dt>
+                                <dd class="col-sm-8">@Html.DisplayFor(model => model.Categoria.Nombre)</dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted small text-uppercase">Datos de Venta</h5>
+                            <hr class="mt-0">
+                            <dl class="row">
+                                <dt class="col-sm-4 text-secondary">Precio:</dt>
+                                <dd class="col-sm-8 text-success fw-bold fs-5">$ @Html.DisplayFor(model => model.Precio)</dd>
+
+                                <dt class="col-sm-4 text-secondary">Stock:</dt>
+                                <dd class="col-sm-8">@Html.DisplayFor(model => model.Stock) unidades</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="text-muted small text-uppercase">Descripción</h5>
+                        <div class="p-3 bg-light rounded border">
+                            @Html.DisplayFor(model => model.Descripcion)
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4 border-top pt-3">
+                        <a asp-action="Index" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Volver a la lista
+                        </a>
+                        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning fw-bold shadow-sm">
+                            <i class="bi bi-pencil"></i> Editar Producto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

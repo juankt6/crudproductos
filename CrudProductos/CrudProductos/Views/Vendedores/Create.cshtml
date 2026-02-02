@@ -1,0 +1,66 @@
+﻿@model CrudProductos.Models.Vendedor
+
+@{
+    ViewData["Title"] = "Registro de Vendedor";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-lg border-0 rounded-3">
+                <div class="card-header bg-dark text-white text-center py-3">
+                    <h3 class="mb-0">🔐 Nuevo Usuario</h3>
+                    <small>Registro de Personal de Ventas</small>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Nombre Completo</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input asp-for="NombreCompleto" class="form-control" placeholder="Ej. Ana Gomez" />
+                            </div>
+                            <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Correo Electrónico</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@@</span>
+                                <input asp-for="Correo" class="form-control" placeholder="ana@empresa.com" />
+                            </div>
+                            <span asp-validation-for="Correo" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Contraseña</label>
+                            <input asp-for="Contrasena" type="password" class="form-control" placeholder="******" />
+                            <span asp-validation-for="Contrasena" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Teléfono</label>
+                            <input asp-for="Telefono" class="form-control" placeholder="099..." />
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+                        
+                        <input type="hidden" asp-for="FechaIngreso" value="@DateTime.Now" />
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Registrar Vendedor</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center bg-light">
+                    <a asp-controller="Home" asp-action="Index" class="text-decoration-none">Volver al Inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

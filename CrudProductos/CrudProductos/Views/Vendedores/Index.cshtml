@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CrudProductos.Models.UsuarioAplicacion>
+
+@{
+    ViewData["Title"] = "Lista de Vendedores";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>👥 Vendedores Registrados</h2>
+        <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-primary">
+            <i class="bi bi-person-plus-fill"></i> Nuevo Vendedor
+        </a>
+    </div>
+
+    <div class="card shadow border-0">
+        <div class="card-body p-0">
+            <table class="table table-hover table-striped mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombres y Apellidos</th>
+                        <th>Cédula</th>
+                        <th>Contacto</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="fw-bold text-primary">
+                                @Html.DisplayFor(modelItem => item.CodigoVendedor)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nombres) @Html.DisplayFor(modelItem => item.Apellidos)
+                                <br />
+                                <small class="text-muted">@item.Email</small>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Cedula)
+                            </td>
+                            <td>
+                                <div><i class="bi bi-phone"></i> @item.PhoneNumber</div>
+                                <small class="text-muted"><i class="bi bi-geo-alt"></i> @item.Direccion</small>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-secondary" disabled>Gestionar</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

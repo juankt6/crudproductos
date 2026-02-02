@@ -10,11 +10,17 @@ namespace CrudProductos.Models
         [Required]
         public string Nombre { get; set; }
 
-        [Column(TypeName = "decimal(18, 2)")]
+        [Required]
         public decimal Precio { get; set; }
 
-        public string Categoria { get; set; }
+        [Required]
+        public int Stock { get; set; }
 
-        public DateTime FechaCreacion { get; set; }
+        public string Descripcion { get; set; }
+
+        public int CategoriaId { get; set; }
+
+        [ForeignKey("CategoriaId")]
+        public Categoria? Categoria { get; set; }
     }
 }

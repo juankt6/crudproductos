@@ -1,0 +1,112 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-lg border-0 rounded-3">
+                <div class="card-header bg-success text-white text-center py-4">
+                    <h3 class="mb-0 fw-bold">👤 Nuevo Usuario</h3>
+                    <p class="mb-0 small text-white-50">Crea una cuenta para acceder</p>
+                </div>
+                <div class="card-body p-4">
+                    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+
+                        <h5 class="text-primary mb-3">Datos Personales</h5>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="Input.Nombres" class="form-control" placeholder="Juan" />
+                                    <label asp-for="Input.Nombres">Nombres</label>
+                                    <span asp-validation-for="Input.Nombres" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="Input.Apellidos" class="form-control" placeholder="Pérez" />
+                                    <label asp-for="Input.Apellidos">Apellidos</label>
+                                    <span asp-validation-for="Input.Apellidos" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="Input.Cedula" class="form-control" placeholder="17..." maxlength="10" />
+                                    <label asp-for="Input.Cedula">Cédula de Identidad</label>
+                                    <span asp-validation-for="Input.Cedula" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="Input.Telefono" class="form-control" placeholder="09..." />
+                                    <label asp-for="Input.Telefono">Teléfono / Celular</label>
+                                    <span asp-validation-for="Input.Telefono" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Direccion" class="form-control" placeholder="Av. Siempre Viva 123" />
+                            <label asp-for="Input.Direccion">Dirección Domiciliaria</label>
+                            <span asp-validation-for="Input.Direccion" class="text-danger"></span>
+                        </div>
+
+                        <h5 class="text-primary mb-3 mt-4">Perfil de Vendedor</h5>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.CodigoVendedor" class="form-control" placeholder="VEND-001" />
+                            <label asp-for="Input.CodigoVendedor">Código Asignado</label>
+                            <span asp-validation-for="Input.CodigoVendedor" class="text-danger"></span>
+                        </div>
+
+                        <h5 class="text-primary mb-3 mt-4">Seguridad de la Cuenta</h5>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                            <label asp-for="Input.Email">Correo Electrónico</label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                                    <label asp-for="Input.Password">Contraseña</label>
+                                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                                    <label asp-for="Input.ConfirmPassword">Confirmar</label>
+                                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid mb-3 mt-4">
+                            <button id="registerSubmit" type="submit" class="btn btn-success btn-lg fw-bold">
+                                <i class="bi bi-person-check-fill"></i> Registrar Vendedor
+                            </button>
+                        </div>
+
+                        <div class="text-center">
+                            <a asp-page="./Login" class="text-decoration-none text-muted small">¿Ya tienes cuenta? Inicia Sesión</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
